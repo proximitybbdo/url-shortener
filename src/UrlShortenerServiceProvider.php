@@ -89,7 +89,7 @@ class UrlShortenerServiceProvider extends ServiceProvider
         // Register 'vinelab.shorten' instance container
        
         $this->app->singleton(Vinelab\UrlShortener\Shorten::class, function ($app) {
-            return new Vinelab\UrlShortener\Shorten($app['config'], $app['vinelab.shorten']);
+            return new Vinelab\UrlShortener\Shorten($app['config'], $app['session.store']);
         });
 
         // Register 'Shorten' Alias, So users don't have to add the Alias to the 'app/config/app.php'

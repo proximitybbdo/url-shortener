@@ -3,6 +3,8 @@
 namespace Vinelab\UrlShortener;
 
 use Illuminate\Support\ServiceProvider;
+use Vinelab\UrlShortener\Base\ConfigManager;
+use Vinelab\UrlShortener\Base\PackageManager;
 
 /**
  * Class UrlShortenerServiceProvider.
